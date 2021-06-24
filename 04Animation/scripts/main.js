@@ -11,10 +11,10 @@ function spin(){
 	}else{
 		rotationSpeed += 0.05;
 	}
-	if(rotationSpeed < 10){
+	if(rotationSpeed < -10){
 		goDown = false;
 	}
-	if(rotationSpeed > -10){
+	if(rotationSpeed > 10){
 		goDown = true;
 	}
 	myOtherBox.object3D.rotation.x += rotationSpeed;
