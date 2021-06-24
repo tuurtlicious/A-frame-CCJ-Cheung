@@ -10,7 +10,7 @@
   <body>
     <a-scene background="color: #333333">
       <a-assets>
-          <img id="wood" src="images/wood.jpg" />
+          <img id="wood" src="./images/grass.jpg" />
           
       </a-assets>
       <a-box id="myBox" 
@@ -19,7 +19,8 @@
         width="3" 
         height="1" 
         depth="1" 
-        shadow>
+        shadow
+        box.material="src: #wood">
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
