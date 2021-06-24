@@ -8,14 +8,41 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
-      <a-box id="myBox"
+    <a-scene background="color: #333333" shadow="enabled">
+      <a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>
+      <a-sphere id="myBox"
         width="2"
         height="2"
         depth="2"
-        color="#63A4A6" 
-        position="0 2 -15">
-      </a-box>
+        color="#accadf" 
+        position="1 4 -15"
+        rotation="3 40 30"
+        scale="1">
+      </a-sphere>
+      <a-sphere id="myBox"
+        radius="3"
+        color="#121212" 
+        position="-1 -0.5 -15"
+        rotation="3 40 30"
+        scale="1">
+      </a-sphere>
+      <a-sphere id="myBox"
+        width="2"
+        height="2"
+        depth="2"
+        color="#AFAFAF" 
+        position="-15 20 -40"
+        rotation="3 40 30"
+        scale="1">
+      </a-sphere>
+      <a-ring id="myRing"
+        radius-inner="0.5" 
+        radius-outer="1"
+        color="#fd8336"
+        position="0 2 -15"
+        rotation="10 10 20"
+        scale="10 3 10">
+      </a-ring>
     </a-scene>
   </body>
 </html>
